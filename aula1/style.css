@@ -1,0 +1,55 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.center {
+    display: flex;
+    height: 100%;
+    widows: 100%;
+    justify-content: center; /* Alinhar conteudo no eixo Y ao centro */
+    align-items: center; /* Alinhar o conteudo no eixo X ao centro */
+}
+
+.center form label {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.center form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    width: 350px;
+    height: 300px;
+}
+
+.center form input[type="text"], input[type="email"], 
+input[type="password"], input[type="number"] {
+    height: 30px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.center form button[type="submit"] {
+    margin-top: 10px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.center form button[type="submit"]:hover {
+    cursor: pointer;
+}
