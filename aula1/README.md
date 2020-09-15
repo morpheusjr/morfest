@@ -1,7 +1,8 @@
 # Melhorias a serem feitas
 #### Feats
 - [ ] Adicionar cabeçalho ao csv
-- [ ] Adicionar verificação se os campos de senha são iguais
+- [ ] Adicionar campo de verificação de senha
+    - [ ] Adicionar verificação se os campos de senha são iguais
 
 #### UX
 - [ ] Adicionar título às páginas
