@@ -1,0 +1,1 @@
+create table pessoa (id  int NOT NULL AUTO_INCREMENT primary key, nome varchar(255), email varchar(255), senha varchar(255));
