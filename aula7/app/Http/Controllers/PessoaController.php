@@ -26,23 +26,27 @@ class PessoaController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'nome'      => 'required|string',
-            'email'     => 'required|string',
-            'senha'     => 'required|string'
-        ]);
-
+        $this->validarPessoa($request);
         return $this->pessoaService->store($request);
     }
 
-    public function update($id, $request)
+    public function update($id, Request $request)
     {
-        //$pessoa = $this->pessoaService->getById($id);
-        //return $this->pessoaService->update($pessoa, $request);
+        $this->validarPessoa($request);
+        return $this->pessoaService->update($id, $request);
     }
 
     public function delete($id)
     {
-        //return $this->pessoaService->delete($id);
+        return $this->pessoaService->delete($id);
+    }
+
+    private function validarPessoa(Request $request)
+    {
+        return $this->validate($request, [
+            'nome'      => 'required|string',
+            'email'     => 'required|string',
+            'senha'     => 'required|string'
+        ]);
     }
 }

@@ -28,4 +28,20 @@ class PessoaService
         $pessoa = $this->pessoa->create($request->all());
         return response()->json($pessoa, 201);
     }
+
+    public function update($id, $request)
+    {
+        $pessoa = $this->getById($id);
+        $pessoa->update($request->all());
+
+        return response()->json($pessoa, 200);
+    }
+
+    public function delete($id)
+    {
+        $pessoa = $this->getById($id);
+        $pessoa->delete();
+
+        return response()->json($pessoa, 200);
+    }
 }

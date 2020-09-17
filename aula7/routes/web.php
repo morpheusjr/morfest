@@ -21,7 +21,7 @@ $router->get('/', function () use ($router) {
 $router->get('/pessoa', ['uses' => 'PessoaController@index']);
 
 // Retornar uma pessoa
-$router->get('/pessoa/{id}', ['uses' => 'PessoaController@show']);
+$router->get('/pessoa/{pessoa}', ['uses' => 'PessoaController@show']);
 
 // Criar uma nova pessoa
 $router->post('/pessoa', ['uses' => 'PessoaController@store']);
