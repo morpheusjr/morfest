@@ -1,0 +1,10 @@
+[
+    {
+        "command": "macros.phpArrow",
+        "args": {
+            "find": ".",
+            "replace": "",
+            "all": true
+        }
+    }
+]

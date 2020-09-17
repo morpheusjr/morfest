@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Services\PessoaService;
-use Laravel\Lumen\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 
-class PessoaController extends BaseController
+class PessoaController extends Controller
 {
     protected $pessoaService;
 
@@ -14,8 +14,35 @@ class PessoaController extends BaseController
         $this->pessoaService = $pessoaService;
     }
 
-    public function getAll()
+    public function index()
     {
-        return $this->pessoaService->getAll();
+        return $this->pessoaService->index();
+    }
+
+    public function show($id)
+    {
+        return $this->pessoaService->getById($id);
+    }
+
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'nome'      => 'required|string',
+            'email'     => 'required|string',
+            'senha'     => 'required|string'
+        ]);
+
+        return $this->pessoaService->store($request);
+    }
+
+    public function update($id, $request)
+    {
+        //$pessoa = $this->pessoaService->getById($id);
+        //return $this->pessoaService->update($pessoa, $request);
+    }
+
+    public function delete($id)
+    {
+        //return $this->pessoaService->delete($id);
     }
 }

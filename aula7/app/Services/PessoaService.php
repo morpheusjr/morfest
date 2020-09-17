@@ -2,10 +2,30 @@
 
 namespace App\Services;
 
+use App\Models\Pessoa;
+
 class PessoaService
 {
-    public function getAll()
+    protected $pessoa;
+
+    public function __construct(Pessoa $pessoa)
     {
-        return "Ola mundo de Service";
+        $this->pessoa = $pessoa;
+    }
+
+    public function index()
+    {
+        return $this->pessoa->get();
+    }
+
+    public function getById($id)
+    {
+        return $this->pessoa->findOrFail($id);
+    }
+
+    public function store($request)
+    {
+        $pessoa = $this->pessoa->create($request->all());
+        return response()->json($pessoa, 201);
     }
 }

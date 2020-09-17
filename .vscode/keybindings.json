@@ -1,0 +1,8 @@
+{
+    "key": ".",
+    "command": "type",
+    "when": "editorTextFocus",
+    "args": {
+        "text": "->"
+    }
+}
