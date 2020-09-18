@@ -12,6 +12,7 @@
 
 #### Refactor
 - [ ] Usar o model injection do eloquent nas rotas
+- [ ] Agrupar as rotas usando group do lumen
 
 ### Outras modificações
 Nessa seção serão listadas as modificações aceitas que não estavam previstas.
