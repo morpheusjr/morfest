@@ -8,7 +8,7 @@
             "name": "Launch server",
             "type": "php",
             "request": "launch",
-            "program": "${workspaceRoot}/aula7/server.php",
+            "program": "${workspaceRoot}/aula8/server.php",
             "runtimeExecutable": "php",
             "runtimeArgs": [
                 "-dzend_extension=php_xdebug.dll",
@@ -22,7 +22,7 @@
             "name": "Launch server Linux",
             "type": "php",
             "request": "launch",
-            "program": "${workspaceRoot}/aula7/server.php",
+            "program": "${workspaceRoot}/aula8/server.php",
             "runtimeExecutable": "php",
             "runtimeArgs": [
                 "-S",
@@ -35,7 +35,7 @@
             "name": "Launch server Linux Container",
             "type": "php",
             "request": "launch",
-            "program": "${workspaceRoot}/aula7/server.php",
+            "program": "${workspaceRoot}/aula8/server.php",
             "runtimeExecutable": "php",
             "runtimeArgs": [
                 "-S",
