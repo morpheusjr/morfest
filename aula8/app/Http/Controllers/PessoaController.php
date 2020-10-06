@@ -16,26 +16,42 @@ class PessoaController extends Controller
 
     public function index()
     {
-        return $this->pessoaService->index();
+        $pessoas = $this->pessoaService->index();
+        return view('index', ['pessoas' => $pessoas]);
+    }
+
+    public function storeForm()
+    {
+        return view('store');
     }
 
     public function show($id)
     {
-        return $this->pessoaService->getById($id);
+        $pessoa = $this->pessoaService->getById($id);
+        return view('show', ['pessoa' => $pessoa]);
     }
 
     public function store(Request $request)
     {
-        return $this->pessoaService->store($request);
+        $this->pessoaService->store($request);
+        return redirect('pessoa');
     }
 
     public function update($id,  Request $request)
     {
-        return $this->pessoaService->update($id, $request);
+        $this->pessoaService->update($id, $request);
+        return redirect('pessoa');
+    }
+
+    public function edit($id)
+    {
+        $pessoa = $this->pessoaService->getById($id);
+        return view('edit', ['pessoa' => $pessoa]);
     }
 
     public function delete($id)
     {
-        return $this->pessoaService->delete($id);
+        $this->pessoaService->delete($id);
+        return redirect('pessoa');
     }
 }

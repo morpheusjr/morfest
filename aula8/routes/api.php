@@ -20,8 +20,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 //Route::get('/pessoa', 'PessoaController@index');
+/*
 Route::get('/pessoa', [PessoaController::class, 'index']);
 Route::get('/pessoa/{id}', [PessoaController::class, 'show']);
+*/
+
 Route::post('/pessoa', [PessoaController::class, 'store']);
-Route::put('/pessoa/{id}', [PessoaController::class, 'update']);
 Route::delete('/pessoa/{id}', [PessoaController::class, 'delete']);
+Route::put('/pessoa/{id}', [PessoaController::class, 'update']);

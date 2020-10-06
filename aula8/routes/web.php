@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PessoaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/pessoa', [PessoaController::class, 'index']);
+Route::get('/pessoa/{id}', [PessoaController::class, 'show']);
+Route::get('/editar/{id}', [PessoaController::class, 'edit']);
+
+Route::get('/cadastro', [PessoaController::class, 'storeForm']);
