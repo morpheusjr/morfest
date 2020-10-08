@@ -7,3 +7,4 @@ O curso também promove a participação dos membros no Hacktoberfest 2020.
 
 
 ### Lista de presença
+- Lucas Lima Camapos
