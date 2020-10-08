@@ -5,7 +5,7 @@
     - [ ] Adicionar verificação se os campos de senha são iguais
 
 #### UX
-- [ ] Adicionar título às páginas
+- [X] Adicionar título às páginas - @Lucaslimacampos
 
 #### Style
 - [ ] Adicionar efeito visual de hover no botão de cadastro
