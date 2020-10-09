@@ -1,11 +1,11 @@
 # Melhorias a serem feitas
 #### Feats
 - [ ] Adicionar cabeçalho ao csv
-- [ ] Adicionar campo de verificação de senha
+- [X] Adicionar campo de verificação de senha - [@Lucaslimacampos](https://github.com/Lucaslimacampos)
     - [ ] Adicionar verificação se os campos de senha são iguais
 
 #### UX
-- [X] Adicionar título às páginas - @Lucaslimacampos
+- [X] Adicionar título às páginas - [@Lucaslimacampos](https://github.com/Lucaslimacampos)
 
 #### Style
 - [ ] Adicionar efeito visual de hover no botão de cadastro
