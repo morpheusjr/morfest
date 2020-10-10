@@ -8,7 +8,7 @@
 - [X] Adicionar título às páginas - [@Lucaslimacampos](https://github.com/Lucaslimacampos)
 
 #### Style
-- [ ] Adicionar efeito visual de hover no botão de cadastro
+- [X] Adicionar efeito visual de hover no botão de cadastro - [@Lucaslimacampos](https://github.com/Lucaslimacampos)
 - [ ] Adicionar efeito visual de click no botão de cadastro
 - [ ] Trocar/melhorar fonte do formulário
 - [ ] Criar css para a página de resposta do cadastro
