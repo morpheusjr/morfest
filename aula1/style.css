@@ -48,8 +48,10 @@ input[type="password"], input[type="number"] {
     font-size: 16px;
     font-weight: 700;
     border-radius: 15px;
+    transition-duration: 0.5s;
 }
 
 .center form button[type="submit"]:hover {
     cursor: pointer;
+    background-color: blue;
 }
