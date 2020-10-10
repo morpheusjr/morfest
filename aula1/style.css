@@ -53,5 +53,5 @@ input[type="password"], input[type="number"] {
 
 .center form button[type="submit"]:hover {
     cursor: pointer;
-    background-color: aqua;
+    background-color: blue;
 }
