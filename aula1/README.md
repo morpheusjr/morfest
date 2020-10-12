@@ -10,7 +10,7 @@
 #### Style
 - [X] Adicionar efeito visual de hover no botão de cadastro - [@Lucaslimacampos](https://github.com/Lucaslimacampos)
 - [ ] Adicionar efeito visual de click no botão de cadastro
-- [X] Trocar/melhorar fonte do formulário - [@Jops-Garcia](https://github.com/Jops-Garcia)
+- [ ] Trocar/melhorar fonte do formulário
 - [ ] Criar css para a página de resposta do cadastro
 
 ### Outras modificações
