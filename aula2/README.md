@@ -1,7 +1,7 @@
 # Melhorias a serem feitas
 
 #### UX
-- [ ] Tornar os campos obrigatórios
+- [X] Tornar os campos obrigatórios - [@Jops-Garcia](https://github.com/Jops-Garcia)
 
 #### Style
 - [ ] Centralizar formulário horizontalmente
