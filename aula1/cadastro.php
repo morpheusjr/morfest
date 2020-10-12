@@ -9,17 +9,30 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
+$senha2 = $_POST['senha2'];
 $idade = $_POST['idade'] != '' ? $_POST['idade'] : 0;
 
-$campos = [$nome, $email, $senha, $idade];
+try {
+        
+    if ($senha != $senha2){
+        $error = 'Os valores das senhas de cadastro não são iguais!';
+        throw new Exception($error);
+    }
 
-$nomeArquivo = $nome . '.csv';
-$arquivo = fopen($nomeArquivo, 'w+');
-fputcsv($arquivo, $campos);
+    $campos = [$nome, $email, $senha, $idade];
 
-echo "
-    - Nome: $nome <br>
-    - Email: $email <br>
-    - Senha: $senha <br>
-    - Idade: $idade <br>
-";
+    $nomeArquivo = $nome . '.csv';
+    $arquivo = fopen($nomeArquivo, 'w+');
+    fputcsv($arquivo, $campos);
+
+    echo "
+        - Nome: $nome <br>
+        - Email: $email <br>
+        - Senha: $senha <br>
+        - Idade: $idade <br>
+    ";
+
+} catch (Exception $e) {
+    echo "Erro: ", $e->getMessage(), "\n";
+    echo "</br></br><a href='index.html'> voltar </a>";
+}
