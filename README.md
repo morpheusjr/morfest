@@ -12,3 +12,4 @@ O curso também promove a participação dos membros no Hacktoberfest 2020.
 - João Pedro Garcia
 - Lucas Lima Camapos
 - Jackson Willian Silva Agostinho
+- Mellyssa Mendes
