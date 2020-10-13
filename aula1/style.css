@@ -52,9 +52,15 @@ input[type="password"], input[type="number"] {
     font-weight: 700;
     border-radius: 15px;
     transition-duration: 0.5s;
+    box-shadow: 0 5px #999;
 }
 
 .center form button[type="submit"]:hover {
     cursor: pointer;
     background-color: blue;
+}
+.center form button[type="submit"]:active{
+    background-color:blue;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
 }
