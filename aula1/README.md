@@ -2,7 +2,7 @@
 #### Feats
 - [ ] Adicionar cabeçalho ao csv
 - [X] Adicionar campo de verificação de senha - [@Lucaslimacampos](https://github.com/Lucaslimacampos)
-    - [ ] Adicionar verificação se os campos de senha são iguais
+    - [X] Adicionar verificação se os campos de senha são iguais [@jacksonwillian](https://github.com/jacksonwillian)
 
 #### UX
 - [X] Adicionar título às páginas - [@Lucaslimacampos](https://github.com/Lucaslimacampos)
