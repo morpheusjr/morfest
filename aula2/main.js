@@ -1,19 +1,36 @@
-$('#cadastroForm').submit(function(event) {
+$('#botaoCadastrar').on('click', function (event) {
+
     event.preventDefault();
-    
+    cadastraUsuario();
+});
+
+
+function cadastraUsuario() {
+
+    let obj;
+
     let id = $('#id').val();
     let nome = $('#nome').val();
     let email = $('#email').val();
     let idade = $('#idade').val();
 
-    let obj = {
-        id, nome, email, idade
-    }
+    obj = { id, nome, email, idade }
 
-    $.post('cadastro.php', obj, function(data){
-        data = JSON.parse(data)
+    $.post('cadastro.php', obj, function () {
+    }).done(function (data) {
+        console.log("Sucesso ao realizar cadastro!");
+        adicionaLinhaTabela(data);
+    }).fail(function (data) {
+        console.log("Falha ao realizar cadastro!");
+    });
+}
 
-        let linha = `
+
+function adicionaLinhaTabela(data) {
+
+    data = JSON.parse(data)
+
+    let linha = `
             <tr>
                 <th>${data.id}</th>
                 <td>${data.nome}</td>
@@ -21,7 +38,5 @@ $('#cadastroForm').submit(function(event) {
                 <td>${data.idade}</td>
             </tr>
         `
-        console.log(linha)
-        $('#table-response tbody').append(linha)
-    })
-})
+    $('#table-response tbody').append(linha)
+}
