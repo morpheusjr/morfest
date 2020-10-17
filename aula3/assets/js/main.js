@@ -46,7 +46,7 @@ $('#cadastroForm').submit(function (event) {
             window.location.replace('../index.html');
         }
         else if (resposta.status == 400) {
-            alert("Senha e confirmação de senha, devem ser iguais!");
+            alert("Senha e confirmação de senha devem ser iguais e devem ter pelo menos 6 caracteres!");
         }
         else {
             alert("Erro inesperado");
