@@ -3,7 +3,7 @@
 #### Feat
 - [ ] Adicionar menu superior
 - [ ] Adicionar criptografia MD5 na senha
-- [ ] Adicionar quantidade mínima de caracteres na senha
+- [X] Adicionar quantidade mínima de caracteres na senha - [@jacksonwillian](https://github.com/jacksonwillian)
 
 #### Refactor
 - [ ] Separa os arquivos js, um para cada responsabilidade
