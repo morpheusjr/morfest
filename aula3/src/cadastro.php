@@ -23,7 +23,7 @@ echo json_encode($resposta);
 
 function verificaSenha($resposta)
 {
-    return $resposta->data->senha == $resposta->data->confSenha ? true : false;
+    return ($resposta->data->senha == $resposta->data->confSenha) && (strlen($resposta->data->senha) >= 6);
 }
 
 function criaPessoa($resposta)
