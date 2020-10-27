@@ -7,8 +7,8 @@
 
 #### Refactor
 - [ ] Criar gets e sets para a classe Pessoa
-- [X] Refatorar o controller cadastro para uma Classe
-- [X] Refatorar o controller listar para uma Classe
+- [X] Refatorar o controller cadastro para uma Classe  - [@jacksonwillian](https://github.com/jacksonwillian)
+- [X] Refatorar o controller listar para uma Classe  - [@jacksonwillian](https://github.com/jacksonwillian)
 - [ ] Criar uma classe que guarda a resposta
 - [ ] Separa os arquivos js, um para cada responsabilidade
 
@@ -21,4 +21,4 @@
 Nessa seção serão listadas as modificações aceitas que não estavam previstas.
 
 #### Feat
-- [X] Criar rotas para acessar os recursos de pessoa 
+- [X] Criar rotas para acessar os recursos de pessoa - [@jacksonwillian](https://github.com/jacksonwillian)
