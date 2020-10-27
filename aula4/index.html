@@ -10,29 +10,74 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
-    <title>Aula 3 MYSQL</title>
+    <title>Aula 4 | Home </title>
+    
 </head>
 
 <body>
     <div class="d-flex justify-content-center">
+        
+
         <div class="aula2">
-            <table id="table-response" class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Senha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-            <div>
-                <a href="views/cadastro.html" class="btn btn-primary">Criar registro</a>
-            </div>
+
+            <p> 
+
+                <b>Execução</b>
+                <br/><br/>
+                comando: 
+                <pre> php -S localhost:8080 src/router.php </pre>
+                saída:
+                <pre> PHP 7.4.11 Development Server (http://localhost:8080) started </pre>
+                <br/>
+                <b>Rotas Pessoa</b>
+                <br/><br/>
+                <ul>
+                    <li>
+                        <b>/pessoa </b> - [GET]: Retorna uma lista de pessoas. <br/>
+                        
+                        <hr/>
+                        Requisição (json object), opcional:
+                        <pre> {"id":"valor","nome":"valor","email":"valor"} </pre>
+                        <small>obs.: Os valores informados no json da requisição serão usados como filtro. Para ignorar o filtro defina os valores como <em>null</em>.</small>
+                        
+                        <hr/>
+                        Resposta (json object):
+                        <pre> {"data":[{"id":"valor","nome":"valor","email":"valor","senha":"valor"}}],"status":valor} </pre>                        
+                        <br/>
+                    </li>
+                    <li>
+                        <b>/pessoa/salvar</b> - [POST]: Salva pessoa. <br/>
+                        
+                        <hr/>
+                        Requisição (json object):
+                        <pre> {"nome":"valor","email":"valor","senha":"valor", "confSenha":"valor"} </pre>
+
+                        <hr/>
+                        Resposta (json object):
+                        <pre> {"pessoa":{"nome":"valor","email":valor,"senha":valor},"status":valor} </pre>                        
+                        <br/>
+                    </li>
+                    <li>
+                        <b>/pessoa/visualizar </b>- [GET]: Retorna página de visualizar pessoas. <br/> 
+                        <hr/>
+                        <br/>
+                    </li>
+                    <li>
+                        <b>/pessoa/criar </b> - [GET]: Retorna página do formulário de cadastro de pessoa. <br/>
+                        <hr/>
+                        <br/>
+                    </li>                                                         
+                </ul>
+                
+                
+                
+                
+                
+                
+
+            </p>
         </div>
     </div>
 
@@ -46,7 +91,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
