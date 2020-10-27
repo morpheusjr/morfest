@@ -19,3 +19,6 @@
 
 ### Outras modificações
 Nessa seção serão listadas as modificações aceitas que não estavam previstas.
+
+#### Feat
+- [X] Criar rotas para acessar os recursos de pessoa 
