@@ -7,8 +7,8 @@
 
 #### Refactor
 - [ ] Criar gets e sets para a classe Pessoa
-- [ ] Refatorar o controller cadastro para uma Classe
-- [ ] Refatorar o controller listar para uma Classe
+- [X] Refatorar o controller cadastro para uma Classe
+- [X] Refatorar o controller listar para uma Classe
 - [ ] Criar uma classe que guarda a resposta
 - [ ] Separa os arquivos js, um para cada responsabilidade
 
