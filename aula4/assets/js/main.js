@@ -1,9 +1,9 @@
-
-const postCadastro = '../../src/controllers/cadastro.php';
-const getLista = '../../src/controllers/listar.php';
+const url_base = "http://localhost:8080"
+const postCadastro = url_base + '/pessoa/salvar';
+const getLista = url_base + '/pessoa';
 
 $(document).ready(function () {
-
+    console.log(getLista);
     $.get(getLista, function (resposta) {
         resposta = JSON.parse(resposta);
         if (resposta.status == 200) {
@@ -40,10 +40,12 @@ $('#cadastroForm').submit(function (event) {
 
     $.post(postCadastro, obj, function (resposta) {
         // Essa resposta vai ser 201 (Created) ou 400 (Bad request)
+        console.log(resposta);
         resposta = JSON.parse(resposta);
+        
         if (resposta.status == 201) {
             alert("Pessoa criada com sucesso");
-            window.location.replace('../index.html');
+            window.location.replace('/pessoa/visualizar');
         }
         else if (resposta.status == 400) {
             alert("Senha e confirmação de senha, devem ser iguais!");

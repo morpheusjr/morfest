@@ -5,3 +5,14 @@ body {
 .aula2 {
     width: 600px;
 }
+
+pre {
+  
+    font-family: monospace;
+    white-space: pre;
+    background-color: #E8E8E8;
+    padding: 1em;
+    font-size: 0.8em;
+    margin: 0.5em;
+  
+}
